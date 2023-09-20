@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Code Analysis') {
             steps {
-                echo 'Integrating a code analysis tool to analyze the code and ensure it meets industry standards. fINAL TEST'
+                echo 'Integrating a code analysis tool to analyze the code and ensure it meets industry standards.'
             }
         }
         stage('Security Scan') {
