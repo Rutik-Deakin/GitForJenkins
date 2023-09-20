@@ -10,21 +10,22 @@ pipeline {
         stage('Unit and Integration Tests') {
             steps {
                 echo 'Running unit tests to ensure the code functions as expected and integration tests to ensure the different components of the application work together as expected.'
+                echo 'We can use Mocha or Chai framework'
             }
         }
         stage('Code Analysis') {
             steps {
-                echo 'Integrating a code analysis tool to analyze the code and ensure it meets industry standards.'
+                echo 'Integrating a code analysis tool to analyze the code and ensure it meets industry standards. we can use SonarQube (formerly known as Sonar).'
             }
         }
         stage('Security Scan') {
             steps {
-                echo 'Performing a security scan on the code using a tool to identify any vulnerabilities or loopholes in application.'
+                echo 'Performing a security scan on the code using a tool to identify any vulnerabilities or loopholes in application. We can use OWASP ZAP (Zed Attack Proxy), which is an open-source security testing tool designed specifically for finding security issues in web applications and APIs.'
             }
         }
         stage('Deploy to Staging') {
             steps {
-                echo 'Deploying the application to a staging server (e.g., AWS EC2 instance). Update to check'
+                echo 'Deploying the application to a staging server (AWS EC2 instance). Update to check'
             }
         }
         stage('Integration Tests on Staging') {
