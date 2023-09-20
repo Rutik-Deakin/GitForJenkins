@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Deploy to Staging') {
             steps {
-                echo 'Deploying the application to a staging server (e.g., AWS EC2 instance).'
+                echo 'Deploying the application to a staging server (e.g., AWS EC2 instance). Update to check'
             }
         }
         stage('Integration Tests on Staging') {
